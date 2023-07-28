@@ -98,7 +98,7 @@ def figure_map(data_frame):
             zoom=10
         ),
     )
-    st.plotly_chart(fig2)
+    st.plotly_chart(sagamap)
     # fig2.show()
 
 
