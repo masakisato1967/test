@@ -8,7 +8,7 @@ import requests
 import zipfile
 import streamlit as st
 
-f = open(pk.eyJ1IjoibWFzYWtpc2F0bzE5NjciLCJhIjoiY2xrbDVrZm83MGJwbTNyb2VkcWwxems2diJ9.cIKF-FsWUqpLVcpSRpSaqQ)
+f = open('csv_data/your_token.txt', 'r')
 mapbox_access_token = f.read()
 f.close()
 
@@ -98,7 +98,7 @@ def figure_map(data_frame):
             zoom=10
         ),
     )
-    st.plotly_chart(sagamap)
+    st.plotly_chart(fig2)
     # fig2.show()
 
 
