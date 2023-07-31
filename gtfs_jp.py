@@ -91,7 +91,7 @@ def figure_map(data_frame):
                 lat=data_frame['latitude'].mean(),
                 lon=data_frame['longitude'].mean()
             ),
-            style='streets',  # マップの種類
+            style="open-street-map",  # マップの種類
             pitch=0,
             zoom=10
         ),
