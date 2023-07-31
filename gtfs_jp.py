@@ -85,7 +85,7 @@ def figure_map(data_frame):
         autosize=True,
         hovermode='closest',
         mapbox=dict(
-            accesstoken=mapbox_access_token,
+            
             bearing=0,
             center=dict(
                 lat=data_frame['latitude'].mean(),
